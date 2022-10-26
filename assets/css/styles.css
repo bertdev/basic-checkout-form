@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+
+:root {
+  --primary-font: 'Montserrat', sans-serif;
+  --gray-primary: #4E5150;
+  --gray-background: #F2F2F2;
+  --orange-color: #F2994A;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 1 rem -> 10px */
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--gray-primary);
+  width: 100%;
+}
+
+.title-container {
+  margin-top: 3.2rem;
+}
+
+.content {
+  width: 94vw;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.main-content {
+  margin-top: 2rem;
+}
+
+.chart-container {
+  background-color: var(--gray-background);
+  border-radius: 1.2rem;
+  padding: 3rem 2.4rem;
+}
+
+.chart-item {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.item-informations {
+  display: flex;
+  justify-content: colum;
+  font-weight: 600;
+  font-family: var(--primary-font);
+}
+
+.item-title {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.item-pricing {
+  margin-top: 0.6rem;
+  color: var(--orange-color);
+  font-size: 1.4rem;
+}
+
+.item-pricing small {
+  color: var(--gray-primary);
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+
+.item-image {
+  width: 12.4rem;
+}
+
+.item-image img {
+  width: 100%;
+  border-radius: 1.3rem;
+}
+
+
