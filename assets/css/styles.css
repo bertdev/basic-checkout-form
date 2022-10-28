@@ -4,6 +4,10 @@
   --primary-font: 'Montserrat', sans-serif;
   --gray-primary: #4E5150;
   --gray-background: #F2F2F2;
+  --gray-border-color: #828282;
+  --gray-background-counter-color: #E0E0E0;
+  --gray-counter-color: #333333;
+  --gray-pricing-border-color: #BDBDBD;
   --orange-color: #F2994A;
 }
 
@@ -47,7 +51,16 @@ body {
 .chart-container {
   background-color: var(--gray-background);
   border-radius: 1.2rem;
-  padding: 3rem 2.4rem;
+  padding: 3rem 2.4rem 1rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.chart-itens {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
 }
 
 .chart-item {
@@ -58,7 +71,8 @@ body {
 
 .item-informations {
   display: flex;
-  justify-content: colum;
+  justify-content: space-evenly;
+  flex-direction: column;
   font-weight: 600;
   font-family: var(--primary-font);
 }
@@ -88,5 +102,48 @@ body {
   width: 100%;
   border-radius: 1.3rem;
 }
+
+.item-quantity {
+  width: 12rem;
+  border: 0.1rem solid var(--gray-border-color);
+  border-radius: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 1.2rem .4rem;
+}
+
+.plus-button, 
+.minus-button {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  display: inline-block; 
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--gray-background-counter-color);
+  color: var(--gray-border-color);
+  text-align: center;
+  border-radius: 0.4rem;
+  cursor: pointer;
+} 
+
+.counter {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  height: 2rem;
+  color: var(--gray-counter-color);
+}
+
+.pricing-item {
+  font-family: var(--primary-font);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--gray-counter-color);
+  border-top: 0.1rem solid var(--gray-pricing-border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.8rem;
+}
+ 
 
 
