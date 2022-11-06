@@ -8,9 +8,9 @@
   --gray-background-counter-color: #E0E0E0;
   --gray-counter-color: #333333;
   --gray-pricing-border-color: #BDBDBD;
+  --gray-label-color: #4F4F4F;
   --orange-color: #F2994A;
 }
-
 
 * {
   margin: 0;
@@ -145,5 +145,129 @@ body {
   height: 3.8rem;
 }
  
+.checkout-container h2 {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: var(--gray-counter-color);
+}
 
+.checkout-container label {
+  color: var(--gray-label-color);
+  font-family: var(--primary-font);
+  line-height: 1.2rem;
+  font-size: 1rem;
+}
+
+.checkout-container input {
+  display: block;
+  border: 0.1rem solid var(--gray-border-color);
+  border-radius: 1.2rem;
+  padding: 1rem 3rem;
+  width: 100%;
+}
+
+.checkout-container input,
+.checkout-container select {
+  outline: none;
+  margin-top: 0.5rem;
+}
+
+.checkout-container input::placeholder {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.email-input,
+.phone-input,
+.fullname-input,
+.address-input,
+.city-input,
+.country-input,
+.postalcode-input {
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  background-position: 1rem;
+}
+
+.email-input {
+  background-image: url(./../images/mail-icon.png);
+}
+
+.phone-input {
+  background-image: url(./../images/phone-icon.png);
+}
+
+.fullname-input {
+  background-image: url(./../images/account-icon.png);
+}
+
+.address-input {
+  background-image: url(./../images/home-icon.png);
+}
+
+.city-input, .country-input {
+  background-image: url(./../images/building-icon.png);
+}
+
+.postalcode-input {
+  background-image: url(./../images/postalcode-icon.png);
+}
+
+.checkout-container fieldset {
+  border: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.checkout-container select {
+  display: block;
+  border: 0.1rem solid var(--gray-border-color);
+  border-radius: 1.2rem;
+  padding: 1rem 3rem;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5rem; width: 100%;
+  background-color: #FFF;
+  color: var(--gray-border-color);
+}
+
+.checkout-container option {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.checkout-container .label-save-input {
+  height: 1.6rem;
+  line-height: 1.6rem;
+}
+
+.checkout-container .save-input {
+  display: inline-block;
+  width: 1.6rem;
+} 
+
+.checkout-container button {
+  width: 16.6rem;
+  height: 5.4rem;
+  background-color: var(--orange-color);
+  border: none;
+  border-radius: 1.2rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #FFF;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 600;
+}
 
